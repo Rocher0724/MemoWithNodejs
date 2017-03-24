@@ -59,7 +59,7 @@ public class WriteActivity extends AppCompatActivity {
 
                     String result = Remote.postJson(SITE_URL+"post", jsonString);
 
-                    // 아래 이프문은
+                    // 아래 이프문은 데이터가 변경되었을때 listactivity에서 업데이트하려고 작성해놓은것이다.
                     if("SUCCESS".equals(result)) {
                         // 성공적으로 등록하면 내가 쓴 글 목록에 더해준다.
                         DataStore dataStore = DataStore.getInstance();

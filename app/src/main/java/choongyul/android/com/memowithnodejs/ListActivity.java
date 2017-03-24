@@ -49,22 +49,6 @@ public class ListActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        switch (requestCode) {
-            case RETURNCODE:
-
-//                ResetData resetData = ResetData.getInstance();
-                ResetData.getData();
-
-                setList();
-
-                break;
-        }
-    }
-
     ListView listView;
     CustomAdapter adapter;
     List<Qna> datas;
